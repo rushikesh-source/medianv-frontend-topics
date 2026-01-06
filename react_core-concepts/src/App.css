@@ -1,0 +1,374 @@
+/* ============================= */
+/* HOME PAGE STYLES */
+/* ============================= */
+
+.home {
+  min-height: calc(100vh - 60px);
+  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #475569;
+  max-width: 520px;
+  line-height: 1.6;
+}
+
+
+/* ============================= */
+/* PRODUCTS PAGE STYLES */
+/* ============================= */
+
+.products {
+  padding: 30px 40px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 60px);
+}
+
+.products h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+.product-card h3 {
+  font-size: 16px;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-size: 15px;
+  color: #2563eb;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Product Button */
+.product-card button {
+  padding: 8px 14px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.product-card button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.product-card button:active {
+  transform: translateY(0);
+}
+
+
+
+/* ============================= */
+/* PRODUCTS PAGE STYLES */
+/* ============================= */
+
+.products {
+  padding: 30px 40px;
+  background-color: #f8fafc;
+  min-height: calc(100vh - 60px);
+}
+
+.products-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: violet;
+  font-weight: 700;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 18px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.product-card img {
+  width: 120px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Title */
+.product-card h3 {
+  font-size: 15px;
+  color: #1f2937;
+  margin-bottom: 6px;
+  height: 42px;
+  overflow: hidden;
+}
+
+/* Price */
+.product-card h4 {
+  font-size: 16px;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+/* Rating */
+.product-card h5 {
+  font-size: 14px;
+  color: #16a34a;
+  margin-bottom: 12px;
+}
+
+/* Buy Button */
+.product-card button {
+  padding: 9px 16px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.product-card button:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
+
+.product-card button:active {
+  transform: translateY(0);
+}
+
+
+/* ============================= */
+/* NAVBAR STYLES */
+/* ============================= */
+
+.navbar {
+  height: 60px;
+  background: #0f172a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.nav-logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* Links Container */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+/* Individual Link */
+.nav-link {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover */
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Active Route (optional later with NavLink) */
+.nav-link.active {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+
+
+/* ============================= */
+/* TODO CRUD APP STYLES */
+/* ============================= */
+
+.todo-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #f8fafc;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Input Section */
+.todo-input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input-group input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.todo-input-group input:focus {
+  border-color: #2563eb;
+}
+
+.todo-input-group button {
+  padding: 10px 16px;
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.todo-input-group button:hover {
+  background: #1d4ed8;
+}
+
+/* Todo List */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-item {
+  background: #ffffff;
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.todo-item span {
+  font-size: 14px;
+  color: #1f2937;
+}
+
+/* Action Buttons */
+.todo-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  padding: 6px 10px;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-btn:hover {
+  background: #15803d;
+}
+
+.delete-btn {
+  padding: 6px 10px;
+  background: #dc2626;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete-btn:hover {
+  background: #b91c1c;
+}

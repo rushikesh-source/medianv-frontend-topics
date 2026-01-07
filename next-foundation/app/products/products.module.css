@@ -1,0 +1,93 @@
+/* Page wrapper */
+.container {
+  padding: 40px;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  min-height: 100vh;
+  color: white;
+}
+
+/* Page title */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  perspective: 1200px;
+}
+
+/* 3D Card */
+.card {
+  background: linear-gradient(145deg, #0b1220, #020617);
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  position: relative;
+  cursor: pointer;
+}
+
+/* 3D hover effect */
+.card:hover {
+  transform: rotateY(10deg) rotateX(5deg) translateY(-8px) scale(1.03);
+  box-shadow:
+    0 25px 50px rgba(0, 0, 0, 0.7),
+    0 0 40px rgba(99, 102, 241, 0.35);
+}
+
+/* Light reflection overlay */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0) 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Product image */
+.image {
+  width: 120px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  transform: translateZ(30px);
+  filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.6));
+}
+
+/* Product title */
+.productTitle {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 10px;
+  transform: translateZ(20px);
+  line-height: 1.4;
+}
+
+/* Price or ID */
+.meta {
+  margin-top: 8px;
+  font-size: 13px;
+  opacity: 0.8;
+  transform: translateZ(10px);
+}
